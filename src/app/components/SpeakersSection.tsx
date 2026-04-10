@@ -1,6 +1,7 @@
 import { Dna, Microscope } from "lucide-react";
 import anaLorenaPhoto from "../../../Ponentes/Lorena.jpg.jpeg";
-import irvingPhoto from "../../../Ponentes/Irving-Ulises-Martinez-Vargas-320x240.jpg";
+import irvingPhoto from "../../../Ponentes/6b316440-3db2-df4f-df85-5013fa2ac5c5-310x165.jpg";
+import matiasPhoto from "../../../Ponentes/MATIASALVARADO-600-600-p-L-97.jpg";
 import { SectionGapParticles } from "./SectionGapParticles";
 
 const confirmed = [
@@ -42,6 +43,21 @@ const featuredTalks = [
     accentSecondary: "#a855f7",
     icon: Dna,
     imageBg: "linear-gradient(180deg, rgba(34,10,43,0.92), rgba(7,11,32,0.9))",
+  },
+  {
+    title:
+      "La respuesta inmune de la Tierra y el calentamiento global. Modelación con hamiltoniano de Ising y uso de aprendizaje automático",
+    speaker: "Dr. Matías Alvarado Mentado",
+    photo: matiasPhoto,
+    summary:
+      "Nuestro planeta Tierra ha dado origen y evolución a la vida con la alta diversidad y complejidad actual. Sugiere ser un ser vivo tal que su sistema inmune la protege de los agentes que pueden enfermarla. Actualmente la fiebre o calentamiento global terrestre alerta sobre posibles daños irreversibles. En medicina se sabe que la fiebre es parte del proceso curativo de una enfermedad. Pero, no debe superar el umbral que dañaría órganos y funciones vitales de manera irreversible. Lo cual aplica para el calentamiento global terrestre. En esta conferencia trazaré una propuesta para la modelación y simulación de la respuesta inmune de la Tierra y medidas de mitigación del cambio climático. La herramienta formal es el Modelo de Ising y los métodos de aprendizaje automático para el procesamiento de la información real. Evitar que suba la fiebre terrestre es esencial para evitarle daños irreversibles.",
+    bio:
+      "MAM es doctor en Matemáticas con especialidad en Artifical Intelligence. Su trabajo de investigación es interdisciplinario. En los últimos 10 años ha aplicado el Modelo de Ising, clásico de la termodinámica física, para la modelación y el diseño de algoritmos de la respuesta inmune al cáncer. Asimismo, el Equilibrio de Nash para diseñar estrategias de cooperación para mitigar el calentamiento global. En ambas líneas de trabajo con la aplicación del aprendizaje automático inteligente para procesar datos reales y obtener información útil a la toma de decisiones.",
+    tags: ["Modelo de Ising", "Cambio climático", "Aprendizaje automático", "Respuesta inmune"],
+    accent: "#22d3ee",
+    accentSecondary: "#38bdf8",
+    icon: Microscope,
+    imageBg: "linear-gradient(180deg, rgba(7,32,39,0.92), rgba(7,11,32,0.9))",
   },
 ];
 
@@ -167,7 +183,7 @@ export function SpeakersSection() {
                 color: "#ffffff",
               }}
             >
-              Dos trabajos que conectan{" "}
+              Tres trabajos que conectan{" "}
               <span
                 style={{
                   background: "linear-gradient(135deg, #e879f9, #a855f7)",
@@ -189,8 +205,8 @@ export function SpeakersSection() {
               }}
             >
               Estas ponencias muestran cómo el aprendizaje automático y las herramientas
-              computacionales se integran con problemas biomédicos complejos, desde infección viral
-              hasta respuesta a inmunoterapia.
+              computacionales se integran con problemas complejos, desde infección viral y respuesta
+              a inmunoterapia hasta modelación del cambio climático.
             </p>
           </div>
 
