@@ -1,10 +1,11 @@
 import { Clock, Coffee, Users, Mic2, MessageCircle } from "lucide-react";
+import posterArtwork from "../../../Ponentes/Cartel Taller ML&AI.jpeg";
 
 const agenda = [
   {
     time: "09:00",
     title: "Inauguración",
-    detail: "Dr. A. Pérez Lorenzana – Cuauhtémoc Mancillas L.",
+    detail: "Dr. A. Pérez Lorenzana - Cuauhtémoc Mancillas L.",
     note: "Coordina: Matías Alvarado y Alfonso Rojas Domínguez",
     type: "ceremonia",
     color: "#a855f7",
@@ -273,24 +274,64 @@ export function TopicsSection() {
         </div>
 
         <div
-          className="mt-10 px-6 py-4 rounded-2xl flex items-center gap-3"
+          className="mt-10 grid items-center gap-6 rounded-[1.9rem] p-6 lg:grid-cols-[minmax(0,1fr)_260px]"
           style={{
-            background: "rgba(56,189,248,0.05)",
-            border: "1px solid rgba(56,189,248,0.15)",
+            background:
+              "linear-gradient(135deg, rgba(8,24,38,0.95) 0%, rgba(10,20,38,0.92) 42%, rgba(12,18,34,0.96) 100%)",
+            border: "1px solid rgba(56,189,248,0.2)",
+            boxShadow: "0 24px 80px rgba(0,0,0,0.24)",
           }}
         >
-          <Clock size={15} style={{ color: "#38bdf8", flexShrink: 0 }} />
-          <p
+          <div>
+            <div
+              className="mb-4 inline-flex items-center gap-2 rounded-full px-4 py-1.5"
+              style={{
+                background: "rgba(56,189,248,0.1)",
+                border: "1px solid rgba(56,189,248,0.22)",
+              }}
+            >
+              <Clock size={13} style={{ color: "#38bdf8" }} />
+              <span
+                style={{
+                  fontFamily: "Space Mono, monospace",
+                  fontSize: "0.68rem",
+                  color: "#38bdf8",
+                  letterSpacing: "0.12em",
+                }}
+              >
+                PROGRAMA DEL 21 DE ABRIL
+              </span>
+            </div>
+
+            <p
+              className="max-w-2xl"
+              style={{
+                fontFamily: "Inter, sans-serif",
+                fontSize: "1rem",
+                color: "rgba(203,213,225,0.72)",
+                lineHeight: 1.8,
+              }}
+            >
+              El programa del <strong style={{ color: "#38bdf8" }}>21 de abril</strong> podrá integrarse
+              después, cuando se confirme el material correspondiente.
+            </p>
+          </div>
+
+          <div
+            className="mx-auto w-full max-w-[260px] overflow-hidden rounded-[1.5rem] p-2"
             style={{
-              fontFamily: "Inter, sans-serif",
-              fontSize: "0.85rem",
-              color: "#475569",
-              lineHeight: 1.6,
+              background: "linear-gradient(180deg, rgba(255,255,255,0.09), rgba(255,255,255,0.03))",
+              border: "1px solid rgba(255,255,255,0.12)",
+              boxShadow: "0 18px 44px rgba(0,0,0,0.26)",
             }}
           >
-            El programa del <strong style={{ color: "#38bdf8" }}>21 de abril</strong> podrá integrarse
-            después, cuando se confirme el material correspondiente.
-          </p>
+            <img
+              src={posterArtwork}
+              alt="Cartel del taller y convocatoria de pósters"
+              className="block h-auto w-full rounded-[1.1rem]"
+              style={{ objectFit: "contain" }}
+            />
+          </div>
         </div>
       </div>
     </section>

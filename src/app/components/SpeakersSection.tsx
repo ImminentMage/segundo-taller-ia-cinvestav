@@ -1,5 +1,5 @@
 import { Dna, Microscope } from "lucide-react";
-import anaLorenaPhoto from "../../../Ponentes/AnaLorenaGutierrez.jpg";
+import anaLorenaPhoto from "../../../Ponentes/Lorena.jpg.jpeg";
 import irvingPhoto from "../../../Ponentes/Irving-Ulises-Martinez-Vargas-320x240.jpg";
 import { SectionGapParticles } from "./SectionGapParticles";
 
@@ -16,28 +16,32 @@ const confirmed = [
 const featuredTalks = [
   {
     title:
-      "Computación al rescate: predicción de complejos proteicos en infección viral, el caso FUT8–LC–VP1 en calicivirus felino",
-    speaker: "Ana Lorena Gutiérrez Escolano",
+      "Computación al rescate:predicción de complejos proteicos en infección viral, el caso FUT8–LC–VP1 en calicivirus felino.",
+    speaker: "Dra. Ana Lorena Gutiérrez Escolano",
     photo: anaLorenaPhoto,
-    bio: "Licenciada y Maestra en Biología por la UNAM y Doctora en Ciencias en Patología Experimental por el CINVESTAV-IPN. Su investigación se ha centrado en virus de RNA como VIH, Dengue y Poliovirus. Desde 1997 estudia la relación de los calicivirus con su célula hospedera, con énfasis en apoptosis, replicación viral y posibles blancos antivirales. Ha participado activamente en investigación, formación de estudiantes y divulgación científica.",
     summary:
-      "Esta charla aborda el uso de modelado estructural, docking proteína–proteína y dinámica molecular para predecir interacciones clave entre proteínas virales y celulares. Como caso de estudio, analiza la posible formación de complejos entre LC, VP1 y la fucosiltransferasa celular FUT8 durante la infección por calicivirus felino, integrando predicción computacional con evidencia experimental para proponer mecanismos funcionales y posibles estrategias antivirales.",
-    tags: ["Modelado estructural", "Docking proteico", "Calicivirus felino", "FUT8"],
+      "En esta charla se presentará cómo herramientas computacionales como el modelado estructural, el docking proteína–proteína y la dinámica molecular pueden utilizarse para predecir interacciones clave entre proteínas virales y celulares. Como caso de estudio, se analizará la posible formación de complejos entre dos proteínas virales: la lider de la cápside (LC) y la mayoritaria de la cápside (VP1) con la fucosiltransferasa celular (FUT8) durante la infección por calicivirus felino. Finalmente, se discutirá cómo estas predicciones se integran con evidencia experimental para proponer mecanismos funcionales relevantes en la replicación viral y estrategias antivirales.",
+    bio:
+      "Licenciatura y Maestría en Biología, UNAM, y Doctorado en Ciencias,  Patología Experimental del CINVESTAV-IPN, México. Su trabajo se ha basado en el estudio de la biología molecular de virus de RNA como VIH, Dengue, Poliovirus. Desde 1997 su grupo de investigación estudia la relación de los calicivirus con su célula hospedera; particularmente  la regulación de la apoptosis durante infecciones virales y el papel de proteínas virales y celulares que participan en la replicación y que pudieran ser utilizadas como blancos para el diseño de compuestos antivirales. Ha formado estudiantes de Maestría y Doctorado de Cinvestav y de Licenciatura de diversos Institutos y del IPN, la UAM y la UNAM. Ha escrito artículos científicos en revistas de investigación internacionales y presentado su investigación en congresos Nacionales e Internacionales. Es muy activa en la divulgación de la ciencia en diversos foros. Es coordinadora de asesores de la Secretaría Académica de Cinvestav, desde marzo del 2024. Es Miembro de la Academia Mexicana de Ciencias, de la Sociedad Mexicana de Bioquímica y de la Sociedad Americana de Microbiología y miembro fundador de la Sociedad Mexicana de Virología. Forma parte del comité editorial de revistas Científicas y de divulgación.",
+    tags: ["Modelado estructural", "Docking proteína–proteína", "Calicivirus felino", "FUT8–LC–VP1"],
     accent: "#38bdf8",
     accentSecondary: "#06b6d4",
     icon: Microscope,
+    imageBg: "linear-gradient(180deg, rgba(8,32,43,0.92), rgba(7,11,32,0.9))",
   },
   {
     title: "Predicción de respuesta a la inmunoterapia en cáncer de mama con scRNA-seq y aprendizaje automático",
-    speaker: "Irving Ulises Martínez Vargas",
+    speaker: "Dr. Irving Ulises Martínez Vargas",
     photo: irvingPhoto,
-    bio: "Doctor en Ciencia en Infectómica y Patogénesis Molecular por el CINVESTAV. Su investigación se enfoca en inmunología de mucosas en inflamación y cáncer. Se ha acercado al aprendizaje automático en aplicaciones para búsqueda de biomarcadores en cáncer y modelado de la respuesta inmune antitumoral. Realizó estancias en la Universidad de Johns Hopkins y en la Escuela de Medicina Icahn del Hospital Mount Sinai. Actualmente adscrito al Centro de Investigación Especializada en Microbiología de la UAG y vicepresidente de la Junta Directiva Junior de ALACI.",
     summary:
-      "Usando datos de scRNA-seq pretratamiento en pacientes con TNBC, este trabajo deriva matrices de expresión a nivel paciente para células T, B y mieloides y construye modelos de aprendizaje automático para predecir respuesta a ICI. Mediante selección de variables con Random Forest y clasificación con LR, FFNN y SVM, identifica firmas multigénicas predictivas con relevancia funcional, señal pronóstica ortogonal y portabilidad en una cohorte externa.",
-    tags: ["scRNA-seq", "TNBC", "Random Forest", "Inmunoterapia", "ICI"],
+      "Usando datos de scRNA-seq pretratamiento en pacientes con TNBC, derivamos matrices de expresión a nivel paciente para células T, B y mieloides y construimos modelos de aprendizaje automático para predecir respuesta a ICI. Mediante selección de variables con Random Forest y clasificación (LR, FFNN, SVM), identificamos firmas multigénicas predictivas, incluyendo genes no sobre expresados individualmente. Las firmas muestran relevancia funcional (DAVID/GO), señal pronóstica ortogonal y portabilidad en una cohorte externa.",
+    bio:
+      "Irving Ulises Martínez Vargas es Doctor en Ciencia en Infectómica y Patogénesis Molecular en el CINVESTAV. Su área de investigación es la inmunología de mucosas en inflamación y cáncer. Su acercamiento al área de aprendizaje automático inicio durante una estancia posdoctoral con el Dr. Matías Alvarado donde ha participado en aplicación de nuevos métodos para búsqueda de biomarcadores en cáncer y el modelado de la respuesta inmune anti-tumoral. Hizo estancia doctoral en la Universidad de Johns Hopkins y como posdoctorado en la Escuela de Medicina Icahn del Hospital Mount Sinai. Actualmente está adscrito al Centro de Investigación Especializada en Microbiología de la UAG, y es vicepresidente de la Junta Directiva Junior de la Asociación de Inmunología de Latinoamérica y del Caribe (ALACI).",
+    tags: ["scRNA-seq", "TNBC", "Random Forest", "ICI", "Biomarcadores"],
     accent: "#e879f9",
     accentSecondary: "#a855f7",
     icon: Dna,
+    imageBg: "linear-gradient(180deg, rgba(34,10,43,0.92), rgba(7,11,32,0.9))",
   },
 ];
 
@@ -180,7 +184,7 @@ export function SpeakersSection() {
               style={{
                 fontFamily: "Inter, sans-serif",
                 fontSize: "1rem",
-                color: "rgba(148,163,184,0.82)",
+                color: "rgba(203,213,225,0.84)",
                 lineHeight: 1.75,
               }}
             >
@@ -190,139 +194,183 @@ export function SpeakersSection() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8">
-            {featuredTalks.map((talk, i) => {
+          <div className="grid gap-10">
+            {featuredTalks.map((talk) => {
               const Icon = talk.icon;
               return (
-                <div
-                  key={i}
-                  className="group rounded-3xl overflow-hidden transition-all duration-500 hover:-translate-y-2"
+                <article
+                  key={talk.speaker}
+                  className="overflow-hidden rounded-[2rem]"
                   style={{
-                    background: "rgba(255,255,255,0.025)",
-                    border: `1px solid ${talk.accent}25`,
-                    boxShadow: "0 4px 40px rgba(0,0,0,0.3)",
+                    background: "rgba(9,14,28,0.88)",
+                    border: `1px solid ${talk.accent}26`,
+                    boxShadow: "0 18px 70px rgba(0,0,0,0.34)",
                   }}
                 >
-                  <div className="relative overflow-hidden" style={{ height: "200px" }}>
-                    <img
-                      src={talk.photo}
-                      alt={`Foto de referencia para ${talk.speaker}`}
-                      className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
-                    />
+                  <div className="grid lg:grid-cols-[320px_minmax(0,1fr)]">
                     <div
-                      className="absolute inset-0"
+                      className="relative flex min-h-[340px] items-center justify-center p-5"
                       style={{
-                        background: "linear-gradient(180deg, rgba(5,7,20,0.2) 0%, rgba(5,7,20,0.97) 100%)",
-                      }}
-                    />
-                    <div
-                      className="absolute bottom-5 left-6 w-12 h-12 rounded-2xl flex items-center justify-center"
-                      style={{
-                        background: `linear-gradient(135deg, ${talk.accent}30, ${talk.accentSecondary}15)`,
-                        border: `1px solid ${talk.accent}45`,
-                        backdropFilter: "blur(10px)",
+                        background: talk.imageBg,
+                        borderRight: "1px solid rgba(255,255,255,0.06)",
                       }}
                     >
-                      <Icon size={22} style={{ color: talk.accent }} />
+                      <div
+                        className="absolute inset-0 opacity-35"
+                        style={{
+                          background:
+                            "radial-gradient(circle at top left, rgba(255,255,255,0.14), transparent 42%), radial-gradient(circle at bottom right, rgba(255,255,255,0.08), transparent 36%)",
+                        }}
+                      />
+
+                      <div
+                        className="relative w-full overflow-hidden rounded-[1.6rem] p-3"
+                        style={{
+                          background: "rgba(255,255,255,0.05)",
+                          border: "1px solid rgba(255,255,255,0.1)",
+                          boxShadow: "0 12px 40px rgba(0,0,0,0.22)",
+                        }}
+                      >
+                        <img
+                          src={talk.photo}
+                          alt={`Fotografía de ${talk.speaker}`}
+                          className="block h-[280px] w-full rounded-[1.15rem]"
+                          style={{ objectFit: "contain", background: "rgba(255,255,255,0.03)" }}
+                        />
+                      </div>
                     </div>
-                    <div className="absolute bottom-5 left-24 right-5">
-                      <p
+
+                    <div className="p-6 md:p-8">
+                      <div className="flex flex-wrap items-center gap-3 mb-5">
+                        <div
+                          className="flex h-12 w-12 items-center justify-center rounded-2xl"
+                          style={{
+                            background: `linear-gradient(135deg, ${talk.accent}26, ${talk.accentSecondary}16)`,
+                            border: `1px solid ${talk.accent}45`,
+                          }}
+                        >
+                          <Icon size={22} style={{ color: talk.accent }} />
+                        </div>
+
+                        <div>
+                          <p
+                            style={{
+                              fontFamily: "Space Grotesk, sans-serif",
+                              fontWeight: 700,
+                              fontSize: "1.15rem",
+                              color: "#f8fafc",
+                              lineHeight: 1.25,
+                            }}
+                          >
+                            {talk.speaker}
+                          </p>
+                          <p
+                            style={{
+                              fontFamily: "Space Mono, monospace",
+                              fontSize: "0.68rem",
+                              color: talk.accent,
+                              letterSpacing: "0.08em",
+                            }}
+                          >
+                            PONENTE CONFIRMADO
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="flex flex-wrap gap-2 mb-5">
+                        {talk.tags.map((tag) => (
+                          <span
+                            key={tag}
+                            className="rounded-full px-3 py-1"
+                            style={{
+                              background: `${talk.accent}14`,
+                              border: `1px solid ${talk.accent}28`,
+                              fontFamily: "Space Mono, monospace",
+                              fontSize: "0.62rem",
+                              color: talk.accent,
+                              letterSpacing: "0.05em",
+                            }}
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+
+                      <h3
+                        className="mb-6"
                         style={{
                           fontFamily: "Space Grotesk, sans-serif",
                           fontWeight: 700,
-                          fontSize: "1.05rem",
-                          color: "#f1f5f9",
-                          lineHeight: 1.3,
+                          fontSize: "clamp(1.15rem, 2vw, 1.45rem)",
+                          color: "#f8fafc",
+                          lineHeight: 1.38,
                         }}
                       >
-                        {talk.speaker}
-                      </p>
-                      <p
-                        style={{
-                          fontFamily: "Space Mono, monospace",
-                          fontSize: "0.62rem",
-                          color: talk.accent,
-                          letterSpacing: "0.06em",
-                        }}
-                      >
-                        PONENTE CONFIRMADO
-                      </p>
-                    </div>
-                  </div>
+                        {talk.title}
+                      </h3>
 
-                  <div className="p-6">
-                    <div className="flex flex-wrap gap-1.5 mb-4">
-                      {talk.tags.map((tag) => (
-                        <span
-                          key={tag}
-                          className="px-2.5 py-0.5 rounded-full"
+                      <div
+                        className="mb-5 rounded-[1.5rem] p-5"
+                        style={{
+                          background: "rgba(255,255,255,0.045)",
+                          border: "1px solid rgba(255,255,255,0.08)",
+                        }}
+                      >
+                        <p
+                          className="mb-2"
                           style={{
-                            background: `${talk.accent}14`,
-                            border: `1px solid ${talk.accent}28`,
                             fontFamily: "Space Mono, monospace",
-                            fontSize: "0.58rem",
+                            fontSize: "0.7rem",
                             color: talk.accent,
-                            letterSpacing: "0.05em",
+                            letterSpacing: "0.1em",
                           }}
                         >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
+                          RESUMEN
+                        </p>
+                        <p
+                          style={{
+                            fontFamily: "Inter, sans-serif",
+                            fontSize: "0.96rem",
+                            lineHeight: 1.8,
+                            color: "#dbe4f0",
+                          }}
+                        >
+                          {talk.summary}
+                        </p>
+                      </div>
 
-                    <h3
-                      className="mb-4"
-                      style={{
-                        fontFamily: "Space Grotesk, sans-serif",
-                        fontWeight: 700,
-                        fontSize: "0.98rem",
-                        color: "#f1f5f9",
-                        lineHeight: 1.45,
-                      }}
-                    >
-                      {talk.title}
-                    </h3>
-
-                    <div
-                      className="p-4 rounded-xl mb-4"
-                      style={{
-                        background: `${talk.accent}08`,
-                        border: `1px solid ${talk.accent}18`,
-                      }}
-                    >
-                      <p
+                      <div
+                        className="rounded-[1.5rem] p-5"
                         style={{
-                          fontFamily: "Inter, sans-serif",
-                          fontSize: "0.83rem",
-                          lineHeight: 1.72,
-                          color: "#64748b",
+                          background: "rgba(7,12,24,0.62)",
+                          border: `1px solid ${talk.accent}18`,
                         }}
                       >
-                        <strong style={{ color: "#94a3b8" }}>Resumen: </strong>
-                        {talk.summary}
-                      </p>
+                        <p
+                          className="mb-2"
+                          style={{
+                            fontFamily: "Space Mono, monospace",
+                            fontSize: "0.7rem",
+                            color: talk.accentSecondary,
+                            letterSpacing: "0.1em",
+                          }}
+                        >
+                          SEMBLANZA
+                        </p>
+                        <p
+                          style={{
+                            fontFamily: "Inter, sans-serif",
+                            fontSize: "0.95rem",
+                            lineHeight: 1.8,
+                            color: "#cbd5e1",
+                          }}
+                        >
+                          {talk.bio}
+                        </p>
+                      </div>
                     </div>
-
-                    <p
-                      style={{
-                        fontFamily: "Inter, sans-serif",
-                        fontSize: "0.8rem",
-                        lineHeight: 1.68,
-                        color: "#475569",
-                      }}
-                    >
-                      <strong style={{ color: "#64748b" }}>Semblanza: </strong>
-                      {talk.bio}
-                    </p>
                   </div>
-
-                  <div
-                    className="h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                    style={{
-                      background: `linear-gradient(90deg, transparent, ${talk.accent}, ${talk.accentSecondary}, transparent)`,
-                    }}
-                  />
-                </div>
+                </article>
               );
             })}
           </div>
