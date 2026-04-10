@@ -17,6 +17,12 @@ La página incluye secciones como:
 
 El sitio está construido como una aplicación frontend con **React**, **TypeScript** y **Vite**, con una estética orientada a ciencia, tecnología e inteligencia artificial.
 
+## Demo
+
+Demo disponible en:
+
+- http://62.72.27.188:8083
+
 ## Tecnologías
 
 - React 18
