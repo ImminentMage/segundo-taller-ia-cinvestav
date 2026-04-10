@@ -4,7 +4,7 @@ Sitio web del **2º Taller de Inteligencia Artificial y Aprendizaje Automático 
 
 ## Descripción
 
-Este proyecto implementa una interfaz web enfocada en comunicar de forma clara y visualmente atractiva la información del taller organizado en CINVESTAV. La página incluye secciones como:
+La página incluye secciones como:
 
 - portada principal del evento
 - descripción general del taller
