@@ -2,6 +2,8 @@
 
 Sitio web del **2º Taller de Inteligencia Artificial y Aprendizaje Automático para la Medicina de Precisión y de Sistemas**, desarrollado como una landing page informativa para presentar el programa, los temas, las ponencias y la información general del evento.
 
+La página fue realizada en colaboración con el **Dr. Jose Matias Alvarado Mentado**.
+
 ## Descripción
 
 La página incluye secciones como:
